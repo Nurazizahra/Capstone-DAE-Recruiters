@@ -1,0 +1,177 @@
+@media (max-width: 768px) {
+    .pusat-bantuan-title {
+        font-size: 36px;
+    }
+
+    .pusat-bantuan-subTitle {
+        font-size: 30px;
+    }
+
+    .pusat-bantuan p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pusat-bantuan-title {
+        font-size: 28px;
+    }
+
+    .pusat-bantuan-subTitle {
+        font-size: 22px;
+    }
+
+    .pusat-bantuan p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-loker {
+        flex-direction: column-reverse;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .image-about {
+        width: 220px;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-subtitle {
+        font-size: 30px;
+    }
+
+    .about-subarticle {
+        font-size: 34px;
+    }
+
+    .about-loker p {
+        font-size: 18px;
+    }
+      
+    .about-loker h5 {
+        font-size: 18px;
+    }
+      
+    .about-loker h6 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-loker {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-subtitle {
+        font-size: 23px;
+    }
+
+    .about-subarticle {
+        font-size: 26px;
+    }
+
+    .about-loker p {
+        font-size: 16px;
+    }
+      
+    .about-loker h5 {
+        font-size: 16px;
+    }
+      
+    .about-loker h6 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 743px) {
+    .content-tips {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .image1 {
+        width:400px;
+        height: 220px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pasang-loker-button {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .pasang-loker-button a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 820px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-copyright p {
+        margin-bottom: 15px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 753px) {
+    .app-bar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    .app-bar .app-bar__navigation ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+}
