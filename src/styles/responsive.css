@@ -10,6 +10,26 @@
     .pusat-bantuan p {
         font-size: 17px;
     }
+
+    .login-form-container, .regis-form-container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .login-form-container h2, .regis-form-container h2 {
+        font-size: 2rem;
+    }
+
+    .login-form input,
+    .regis-form input {
+      padding: 0.5rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 0.875rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -23,6 +43,28 @@
 
     .pusat-bantuan p {
         font-size: 14px;
+    }
+
+    .login-form-container h2,
+    .regis-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-form input,
+    .regis-form input {
+      padding: 0.25rem;
+      font-size: 0.875rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+    }
+  
+    .login-form-container p,
+    .regis-form-container p {
+      font-size: 0.875rem;
     }
 }
 
@@ -118,6 +160,34 @@
 
     .pasang-loker-button a {
         width: 100%;
+    }
+
+    .login-form-container,
+    .regis-form-container {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .login-form-container h2,
+    .regis-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-form input,
+    .regis-form input {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .login-form-container p,
+    .regis-form-container p {
+      font-size: 1rem;
     }
 }
 
