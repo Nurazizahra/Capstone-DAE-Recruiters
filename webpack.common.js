@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src/scripts/index.js'),
@@ -12,18 +13,12 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
-              publicPath: 'images/',
-            },
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
           },
         ],
       },
@@ -33,7 +28,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
-      favicon: './src/public/logo.png',
+      favicon: './logo.png',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, 'src/public/'),
+          to: path.join(__dirname, 'dist/'),
+        },
+      ],
     }),
   ],
 };

@@ -27,7 +27,7 @@ const Tips = {
             </p>
             </div>
             <div class="image-tips">
-              <img class="image1" src="./images/tipsloker.png" alt="Tips Loker" />
+              <img class="image1" src="./tipsloker.png" alt="Tips Loker" />
             </div>
           </div>
       `;

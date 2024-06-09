@@ -4,11 +4,31 @@
     }
 
     .pusat-bantuan-subTitle {
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .pusat-bantuan p {
         font-size: 17px;
+    }
+
+    .login-form-container, .regis-form-container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .login-form-container h2, .regis-form-container h2 {
+        font-size: 2rem;
+    }
+
+    .login-form input,
+    .regis-form input {
+      padding: 0.5rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 0.875rem;
     }
 }
 
@@ -18,11 +38,33 @@
     }
 
     .pusat-bantuan-subTitle {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .pusat-bantuan p {
         font-size: 14px;
+    }
+
+    .login-form-container h2,
+    .regis-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-form input,
+    .regis-form input {
+      padding: 0.25rem;
+      font-size: 0.875rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+    }
+  
+    .login-form-container p,
+    .regis-form-container p {
+      font-size: 0.875rem;
     }
 }
 
@@ -103,7 +145,7 @@
     }
 
     .image1 {
-        width:400px;
+        width:360px;
         height: 220px;
         margin-top: 15px;
     }
@@ -119,9 +161,37 @@
     .pasang-loker-button a {
         width: 100%;
     }
+
+    .login-form-container,
+    .regis-form-container {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .login-form-container h2,
+    .regis-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-form input,
+    .regis-form input {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .submit-button,
+    .submit-regis-button {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .login-form-container p,
+    .regis-form-container p {
+      font-size: 1rem;
+    }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 840px) {
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -136,7 +206,7 @@
     }
 }
 
-@media screen and (min-width: 753px) {
+@media screen and (min-width: 840px) {
     .app-bar {
         display: grid;
         grid-template-columns: 1fr auto;

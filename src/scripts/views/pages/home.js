@@ -1,5 +1,3 @@
-import jumbotronImage from '../../../public/jumbotron-home.png';
-
 const Home = {
   async render() {
     return `
@@ -7,7 +5,7 @@ const Home = {
           <h1>Temukan Karir Impian Anda Bersama Kami!</h1>
           <p>Jelajahi lowongan kerja dari berbagai industri dan temukan peluang yang tepat untuk karir Anda di DAE Recruiters</p>
           <a href="#cari">Mulai Pencarian</a>
-          <img src="${jumbotronImage}" alt="Hero"/>
+          <img src="./jumbotron-home.png" alt="Hero"/>
       </section>
       <section class="search-jobs" id="jobs">
           <h2 id="cari">Cari Lowongan Kerja</h2>

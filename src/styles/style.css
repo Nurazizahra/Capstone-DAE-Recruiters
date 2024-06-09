@@ -2,6 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  z-index: 9999;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +38,7 @@ body {
   min-width: 44px;
   min-height: 44px;
   text-decoration: none;
-  color: white !important
+  color: white !important;
 }
 
 /* Header */
@@ -99,7 +114,7 @@ nav ul li a {
 .app-bar .app-bar__navigation ul .login-button {
   background-color: white;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 1px 20px;
 }
 
@@ -129,7 +144,7 @@ main {
 
 .hero img {
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
   width: 100%;
   height: auto;
   display: block;
@@ -244,7 +259,7 @@ main {
 }
 
 .pasang-loker-button {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
@@ -252,16 +267,16 @@ main {
 
 .pasang-loker-content a {
   padding: 20px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 5px;
-    /* Added margin */
-    width: calc(50% - 30px);
-    /* Set width for each button */
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 5px;
+  /* Added margin */
+  width: calc(50% - 30px);
+  /* Set width for each button */
 }
 
 /* Tips Loker Content */
@@ -298,7 +313,6 @@ main {
 }
 
 .image1 {
-  background-image: url('../public/tipsloker.png');
   width: 350px;
   height: auto;
 }
@@ -361,13 +375,13 @@ main {
   font-weight: 700;
 }
 
-.about-loker span {
-  color: rgb(6, 6, 113);
+.about-loker a {
+  color: rgb(0, 0, 0);
   font-weight: 700;
+  text-decoration: none;
 }
 
 .image-about {
-  background-image: url('../public/logo.png');
   width: 300px;
   height: auto;
 }
@@ -382,7 +396,7 @@ main {
   margin-bottom: 15px;
 }
 
-.pusat-bantuan h3{
+.pusat-bantuan h3 {
   color: #000000;
   font-family: 'Inter-Bold', sans-serif;
   font-size: 35px;
@@ -401,16 +415,126 @@ main {
   margin-bottom: 10px;
 }
 
-.pusat-bantuan span {
-  color: rgb(6, 6, 113);
+.pusat-bantuan a {
+  color: rgb(0, 0, 0);
   font-weight: 700;
   text-decoration: none;
 }
 
 /* Login Content */
+.login-form-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 500px;
+  text-align: center;
+}
 
+.login-form-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  text-align: left;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+
+.submit-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-form-container p {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.login-form-container a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* Registrasi Content */
+.regis-form-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 600px;
+  text-align: center;
+}
+
+.regis-form-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.regis-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.regis-form label {
+  text-align: left;
+}
+
+.regis-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+
+.regis-form .input-hint {
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+  text-align: left;
+}
+
+.submit-regis-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.regis-form-container p {
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+.regis-form-container a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* Footer */
 footer {
@@ -422,14 +546,16 @@ footer {
 }
 
 .footer-copyright {
+  margin-bottom: 20px;
   font-size: 18px;
   align-items: flex-start;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 28px;
+  margin-left: 20px;
 }
 
 .footer-copyright p {
-  margin-top: 10px;
+  margin-top: 19px;
+  margin-bottom: 17px;
 }
 
 .footer-nav {
@@ -447,7 +573,7 @@ footer .footer-nav ul {
 }
 
 footer .footer-nav ul li {
-  margin: 2px;
+  margin: 0;
 }
 
 footer .footer-nav ul li h4 {
