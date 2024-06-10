@@ -28,7 +28,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
-      favicon: './logo.png',
+      favicon: './src/public/logo.png',
     }),
     new CopyWebpackPlugin({
       patterns: [
