@@ -659,6 +659,235 @@ main {
   font-weight: bold;
 }
 
+/* Dashboard Loker */
+.dashboard-container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  min-height: 100vh;
+  border-right: 1px solid black;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1em;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.main-content-dashboard {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-content-dashboard h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Buat Loker */
+.main-content-buatlowongan {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-content-buatlowongan h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.main-content-buatlowongan p {
+  text-align: justify;
+}
+
+.buat-lowongan-container {
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem auto;
+  width: 600px;
+  text-align: left;
+}
+
+.buat-lowongan-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.buatloker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buatloker-form label {
+  text-align: left;
+}
+
+.buatloker-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+
+.buatloker-form .input-hint {
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+  text-align: left;
+}
+
+.submit-buatloker-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.buatloker-form-container p {
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+.buatloker-form-container a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Manajemen Lowongan */
+.main-content-manajemen {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-content-manajemen h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.button-cards {
+  margin-top: 1em;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: black; 
+  color: #fff;
+  text-decoration: none; 
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+/* Edit Loker */
+.main-content-editloker {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-content-editloker h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.main-content-editloker h2 {
+  text-align: justify;
+  font-size: 1em;
+}
+
+.edit-lowongan-container {
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem auto;
+  width: 600px;
+  text-align: left;
+}
+
+.edit-lowongan-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.editloker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editloker-form label {
+  text-align: left;
+}
+
+.editloker-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+}
+
+.editloker-form .input-hint {
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+  color: #888;
+  text-align: left;
+}
+
+.submit-editloker-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.editloker-form-container p {
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+.editloker-form-container a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   background-color: black;
