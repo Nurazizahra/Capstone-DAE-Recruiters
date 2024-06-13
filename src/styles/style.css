@@ -276,9 +276,7 @@ main {
   text-decoration: none;
   border-radius: 10px;
   margin: 5px;
-  /* Added margin */
   width: calc(50% - 30px);
-  /* Set width for each button */
   font-size: 20px;
   background-color: black;
   color: white;
@@ -286,9 +284,7 @@ main {
   text-decoration: none;
   border-radius: 10px;
   margin: 5px;
-  /* Added margin */
-  width: calc(50% - 30px);
-  /* Set width for each button */
+  width: calc(50% - 30px)
 }
 
 /* Tips Loker Content */
@@ -993,9 +989,7 @@ footer {
   width: 100%;
   max-width: 800px;
   justify-content: space-evenly;
-  /* Align to the right */
   margin-left: auto;
-  /* Push to the right */
 }
 
 footer .footer-nav ul {
