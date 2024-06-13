@@ -32,6 +32,10 @@ const Tips = {
           </div>
       `;
   },
+
+  async afterRender() {
+    // Jangan dihapus, biarin aja kosong agar tidak error
+  },
 };
 
 export default Tips;

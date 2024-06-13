@@ -15,6 +15,10 @@ const Pasang = {
         </div>
       `;
   },
+
+  async afterRender() {
+    // Jangan dihapus, biarin aja kosong agar tidak error
+  },
 };
 
 export default Pasang;

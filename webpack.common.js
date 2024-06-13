@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: path.join(__dirname, 'src/scripts/index.js'),
@@ -28,7 +29,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
-      favicon: './logo.png',
+      favicon: './src/public/logo.png',
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -38,5 +39,13 @@ module.exports = {
         },
       ],
     }),
+    new Dotenv(),
   ],
+  resolve: {
+    fallback: {
+     "crypto": require.resolve("crypto-browserify"),
+     "stream": require.resolve("stream-browserify"),
+     "vm": require.resolve("vm-browserify"),
+    }
+  },
 };
