@@ -421,7 +421,7 @@
 
 @media (max-width: 480px) {
   .button-cards {
-    padding: 12px 24px; /* Maintaining the same padding as in higher resolutions */
+    padding: 12px 24px; 
   }
 
   .sidebar {
@@ -473,14 +473,10 @@
   }
 }
 
-/* Existing responsive rules are kept */
-
-/* Additional responsive rules for kelola-akun */
-
 @media (max-width: 768px) {
   .main-content-kelolaakun h1 {
     font-size: 1.6em;
-    margin-bottom: 1.5em; /* Ensure the gap is significant */
+    margin-bottom: 1.5em; 
   }
 
   .kelolaakun-container {
@@ -502,7 +498,7 @@
 @media (max-width: 480px) {
   .main-content-kelolaakun h1 {
     font-size: 1.4em;
-    margin-bottom: 1.5em; /* Ensure the gap is significant */
+    margin-bottom: 1.5em;
   }
 
   .kelolaakun-container {
