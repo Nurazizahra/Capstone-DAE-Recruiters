@@ -701,6 +701,16 @@ main {
   padding: 10px;
 }
 
+/* Detail Loker */
+.data-loker {
+  padding: 1em;
+}
+
+.data-loker h2, h4, h5, p {
+  padding: 0.2em;
+}
+
+/* Dashboard Perusahaan */
 .main-content-dashboard {
   flex: 1;
   padding: 20px;
