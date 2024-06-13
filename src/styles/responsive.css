@@ -472,3 +472,51 @@
     margin-top: 8px;
   }
 }
+
+/* Existing responsive rules are kept */
+
+/* Additional responsive rules for kelola-akun */
+
+@media (max-width: 768px) {
+  .main-content-kelolaakun h1 {
+    font-size: 1.6em;
+    margin-bottom: 1.5em; /* Ensure the gap is significant */
+  }
+
+  .kelolaakun-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .kelolaakun-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .submit-kelolaakun-button {
+    padding: 0.6rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content-kelolaakun h1 {
+    font-size: 1.4em;
+    margin-bottom: 1.5em; /* Ensure the gap is significant */
+  }
+
+  .kelolaakun-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .kelolaakun-form input {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .submit-kelolaakun-button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
