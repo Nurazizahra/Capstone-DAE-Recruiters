@@ -9,9 +9,10 @@ import Dashboard from '../views/pages/dashboard-loker.js';
 import Buat from '../views/pages/buat-lowongan.js';
 import Manajemen from '../views/pages/manajemen-lowongan.js';
 import Edit from '../views/pages/edit-loker.js';
+import Akun from '../views/pages/kelola-akun.js';
 
 const routes = {
-  '/': Home, // default page
+  '/': Home,
   '/home': Home,
   '/pasang': Pasang,
   '/tips': Tips,
@@ -23,6 +24,7 @@ const routes = {
   '/buatloker': Buat,
   '/manajemenloker': Manajemen,
   '/editloker': Edit,
+  '/kelolaakun': Akun,
 };
 
 export default routes;
