@@ -40,18 +40,18 @@ const About = {
                     Dwita Anatasya
                   </h6>
                   <p>
-                    Deskripsi singkat.
+                    Mahasiswi Universitas Palangka Raya.
                   <h6>
                     Nur Azizah Rabiulakhhir
                   </h6>
                   <p>
-                    Deskripsi singkat.
+                     Mahasiswi Universitas Palangka Raya.
                   </p>
                   <h6>
                     El Emir Di Haryanto
                   </h6>
                   <p>
-                      Deskripsi singkat.
+                      Mahasiswa Universitas Pancasila.
                   </p>
             </div>
             <div class="image-about-loker">
