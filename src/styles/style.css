@@ -309,6 +309,39 @@ main {
   color: #e4405f; /* Example color change on hover for Instagram */
 }
 
+.data-loker h5 {
+  margin-top: 18px;
+  font-size: large;
+}
+
+.icon-sosmed {
+  margin-bottom: 18px;
+}
+
+.icon-sosmed a {
+  text-decoration: none;
+  color: black;
+  margin-right: 17px;
+  margin-left: 10px;
+}
+
+.icon-sosmed a:last-child {
+  margin-right: 0;
+}
+
+.icon-sosmed i {
+  font-size: 24px; /* Adjust the size as needed */
+  transition: color 0.3s;
+}
+
+.icon-sosmed a:hover i {
+  color: #0077b5; /* Example color change on hover for LinkedIn */
+}
+
+.icon-sosmed a:hover i.fa-instagram {
+  color: #e4405f; /* Example color change on hover for Instagram */
+}
+
 /* Pasang Loker Content */
 .pasang-loker-frame {
   text-align: center;
@@ -349,9 +382,7 @@ main {
   text-decoration: none;
   border-radius: 10px;
   margin: 5px;
-  /* Added margin */
   width: calc(50% - 30px);
-  /* Set width for each button */
   font-size: 20px;
   background-color: black;
   color: white;
@@ -359,9 +390,7 @@ main {
   text-decoration: none;
   border-radius: 10px;
   margin: 5px;
-  /* Added margin */
-  width: calc(50% - 30px);
-  /* Set width for each button */
+  width: calc(50% - 30px)
 }
 
 /* Tips Loker Content */
@@ -1102,9 +1131,7 @@ footer {
   width: 100%;
   max-width: 800px;
   justify-content: space-evenly;
-  /* Align to the right */
   margin-left: auto;
-  /* Push to the right */
 }
 
 footer .footer-nav ul {
@@ -1126,4 +1153,3 @@ footer .footer-nav ul li a {
   text-decoration: none;
   font-size: 16px;
 }
-

@@ -131,98 +131,98 @@
 }
 
 @media (max-width: 768px) {
-    .about-loker {
-        flex-direction: column-reverse;
-        gap: 25px;
-        align-items: center;
-    }
+  .about-loker {
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+  }
 
-    .image-about {
-        width: 220px;
-        height: auto;
-        margin-top: 15px;
-    }
+  .image-about {
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+  }
 
-    .about-title {
-        font-size: 36px;
-    }
+  .about-title {
+    font-size: 36px;
+  }
 
-    .about-subtitle {
-        font-size: 30px;
-    }
+  .about-subtitle {
+    font-size: 30px;
+  }
 
-    .about-subarticle {
-        font-size: 34px;
-    }
+  .about-subarticle {
+    font-size: 34px;
+  }
 
-    .about-loker p {
-        font-size: 18px;
-    }
-      
-    .about-loker h5 {
-        font-size: 18px;
-    }
-      
-    .about-loker h6 {
-        font-size: 18px;
-    }
+  .about-loker p {
+    font-size: 18px;
+  }
+
+  .about-loker h5 {
+    font-size: 18px;
+  }
+
+  .about-loker h6 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
-    .about-loker {
-        flex-direction: column-reverse;
-        gap: 25px;
-    }
+  .about-loker {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
 
-    .about-title {
-        font-size: 28px;
-    }
+  .about-title {
+    font-size: 28px;
+  }
 
-    .about-subtitle {
-        font-size: 23px;
-    }
+  .about-subtitle {
+    font-size: 23px;
+  }
 
-    .about-subarticle {
-        font-size: 26px;
-    }
+  .about-subarticle {
+    font-size: 26px;
+  }
 
-    .about-loker p {
-        font-size: 16px;
-    }
-      
-    .about-loker h5 {
-        font-size: 16px;
-    }
-      
-    .about-loker h6 {
-        font-size: 16px;
-    }
+  .about-loker p {
+    font-size: 16px;
+  }
+
+  .about-loker h5 {
+    font-size: 16px;
+  }
+
+  .about-loker h6 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 743px) {
-    .content-tips {
-        flex-direction: column-reverse;
-        gap: 20px;
-        align-items: center;
-    }
+  .content-tips {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
 
-    .image1 {
-        width:360px;
-        height: 220px;
-        margin-top: 15px;
-    }
+  .image1 {
+    width: 360px;
+    height: 220px;
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 600px) {
-    .pasang-loker-button {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-    }
+  .pasang-loker-button {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
 
-    .pasang-loker-button a {
-        width: 100%;
-    }
+  .pasang-loker-button a {
+    width: 100%;
+  }
 
     .login-form-container,
     .regis-form-container {
@@ -300,14 +300,14 @@
 }
 
 @media (max-width: 840px) {
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 
-    .footer-copyright p {
-        margin-bottom: 15px;
-    }
+  .footer-copyright p {
+    margin-bottom: 15px;
+  }
 
     .footer-nav {
         flex-direction: column;
@@ -361,43 +361,43 @@
 }
 
 @media screen and (min-width: 840px) {
-    .app-bar {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        padding: 8px 32px;
-    }
+  .app-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
 
-    .app-bar__menu {
-        display: none;
-    }
+  .app-bar__menu {
+    display: none;
+  }
 
-    .app-bar .app-bar__brand img {
-        width: 80px;
-        height: 80px;
-    }
+  .app-bar .app-bar__brand img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .app-bar .app-bar__navigation {
-        position: static;
-        width: 100%;
-        background-color: transparent;
-        padding-top: 0;
-    }
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 0;
+  }
 
-    .app-bar .app-bar__navigation ul {
-        flex-direction: row;
-        gap: 10px;
-    }
+  .app-bar .app-bar__navigation ul {
+    flex-direction: row;
+    gap: 10px;
+  }
 
-    .app-bar .app-bar__navigation ul li {
-        display: inline-block;
-    }
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
 
-    .app-bar .app-bar__navigation ul li a {
-        display: inline-block;
-        width: auto;
-        text-align: center;
-        margin: 0;
-    }
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {

@@ -41,6 +41,7 @@ const About = {
                   </h6>
                   <p>
                     Mahasiswi Universitas Palangka Raya.
+                    Mahasiswi Universitas Palangka Raya.
                   <h6>
                     Nur Azizah Rabiulakhhir
                   </h6>

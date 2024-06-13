@@ -13,7 +13,7 @@ import Detail from '../views/pages/detail-loker.js';
 import Akun from '../views/pages/kelola-akun.js';
 
 const routes = {
-  '/': Home, // default page
+  '/': Home,
   '/home': Home,
   '/pasang': Pasang,
   '/tips': Tips,
