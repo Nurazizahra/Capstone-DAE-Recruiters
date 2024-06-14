@@ -44,6 +44,7 @@ const Akun = {
                       <input type="password" id="newPassword" name="newPassword" placeholder="Masukkan password baru anda" required>
                       <i class="toggle-password" id="toggleNewPassword">🔓</i>
                     </div>
+                    <p class="input-hint">Must be at least 8 characters</p>
           
                     <label for="confirmNewPassword">Konfirmasi Password Baru</label>
                     <div class="password-container">
@@ -110,6 +111,12 @@ const Akun = {
 
         if (!isPasswordValid) {
           alert('Password sebelumnya yang Anda masukkan salah.');
+          return;
+        }
+
+        // Verifikasi panjang password baru
+        if (newPassword.length < 8) {
+          alert('Buat password dengan panjang minimal 8 karakter.');
           return;
         }
 

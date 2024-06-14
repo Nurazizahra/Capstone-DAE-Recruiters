@@ -53,7 +53,7 @@ const Registrasi = {
 
       // Validasi panjang password
       if (password.length < 8) {
-        alert('Buat password minimal 8 karakter');
+        alert('Buat password dengan panjang minimal 8 karakter.');
         return;
       }
 
