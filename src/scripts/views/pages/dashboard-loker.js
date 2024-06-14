@@ -84,7 +84,26 @@ const Dashboard = {
   },
 
   async afterRender() {
-    // Jangan dihapus, biarin aja kosong agar tidak error
+    // Mengubah teks dan href tombol login menjadi logout saat halaman dashboard diakses
+    const loginButton = document.querySelector('.login-button a');
+    
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+      loginButton.textContent = 'Logout';
+      loginButton.href = '#/login';
+
+      // Tambahkan event listener untuk tombol logout
+      loginButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        // Hapus status login
+        sessionStorage.removeItem('isLoggedIn');
+        sessionStorage.removeItem('companyId');
+        // Arahkan ke halaman home setelah logout
+        window.location.hash = '#/login';
+        // Ubah kembali tombol menjadi login
+        loginButton.textContent = 'Login';
+        loginButton.href = '#/login';
+      });
+    }
   },
 };
 

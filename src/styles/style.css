@@ -374,7 +374,7 @@ main {
 }
 
 .pasang-loker-content a {
-  padding: 20px;
+  padding: 16px;
   font-size: 20px;
   background-color: black;
   color: white;
@@ -785,6 +785,8 @@ main {
 /* Dashboard Loker */
 .dashboard-container {
   display: flex;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .sidebar {

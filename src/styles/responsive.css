@@ -1,304 +1,3 @@
-@media (max-width: 768px) {
-    .pusat-bantuan-title {
-        font-size: 36px;
-      }
-    
-      .pusat-bantuan-subTitle {
-        font-size: 29px;
-      }
-    
-      .pusat-bantuan p {
-        font-size: 17px;
-      }
-    
-      .login-form-container,
-      .regis-form-container {
-        width: 90%;
-        padding: 1rem;
-      }
-    
-      .login-form-container h2,
-      .regis-form-container h2 {
-        font-size: 2rem;
-      }
-    
-      .login-form input,
-      .regis-form input {
-        padding: 0.5rem;
-      }
-    
-      .submit-button,
-      .submit-regis-button {
-        padding: 0.5rem;
-        font-size: 0.875rem;
-      }
-    
-      .buat-lowongan-container,
-      .edit-lowongan-container {
-        width: 100%;
-        padding: 0 15px;
-      }
-    
-      .main-content-buatlowongan h1,
-      .main-content-manajemen h1,
-      .main-content-editloker h1 {
-        font-size: 1.6em;
-      }
-    
-      .buat-lowongan-container h2,
-      .edit-lowongan-container h2 {
-        font-size: 1.8rem;
-      }
-    
-      .buatloker-form input,
-      .editloker-form input {
-        font-size: 0.85rem;
-      }
-    
-      .submit-buatloker-button,
-      .submit-editloker-button {
-        font-size: 0.85rem;
-        padding: 0.6rem;
-      }
-    
-      .button-cards {
-        padding: 8px 18px;
-      }
-    
-      .sidebar {
-        width: 180px;
-        padding: 10px;
-      }
-    
-      .sidebar h2 {
-        font-size: 1.2em;
-      }
-    
-      .sidebar ul li a {
-        font-size: 0.9em;
-        padding: 6px;
-      }
-}
-
-@media (max-width: 480px) {
-    .pusat-bantuan-title {
-        font-size: 28px;
-      }
-    
-      .pusat-bantuan-subTitle {
-        font-size: 20px;
-      }
-    
-      .pusat-bantuan p {
-        font-size: 14px;
-      }
-    
-      .login-form-container h2,
-      .regis-form-container h2 {
-        font-size: 1.5rem;
-      }
-    
-      .login-form input,
-      .regis-form input {
-        padding: 0.25rem;
-        font-size: 0.875rem;
-      }
-    
-      .submit-button,
-      .submit-regis-button {
-        padding: 0.5rem;
-        font-size: 0.75rem;
-      }
-    
-      .login-form-container p,
-      .regis-form-container p {
-        font-size: 0.875rem;
-      }
-    
-      .sidebar {
-        width: 100px;
-        padding: 5px;
-      }
-    
-      .sidebar h2 {
-        font-size: 1.2em;
-      }
-    
-      .sidebar ul li a {
-        font-size: 0.9em;
-        padding: 6px;
-      }
-}
-
-@media (max-width: 768px) {
-  .about-loker {
-    flex-direction: column-reverse;
-    gap: 25px;
-    align-items: center;
-  }
-
-  .image-about {
-    width: 220px;
-    height: auto;
-    margin-top: 15px;
-  }
-
-  .about-title {
-    font-size: 36px;
-  }
-
-  .about-subtitle {
-    font-size: 30px;
-  }
-
-  .about-subarticle {
-    font-size: 34px;
-  }
-
-  .about-loker p {
-    font-size: 18px;
-  }
-
-  .about-loker h5 {
-    font-size: 18px;
-  }
-
-  .about-loker h6 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-loker {
-    flex-direction: column-reverse;
-    gap: 25px;
-  }
-
-  .about-title {
-    font-size: 28px;
-  }
-
-  .about-subtitle {
-    font-size: 23px;
-  }
-
-  .about-subarticle {
-    font-size: 26px;
-  }
-
-  .about-loker p {
-    font-size: 16px;
-  }
-
-  .about-loker h5 {
-    font-size: 16px;
-  }
-
-  .about-loker h6 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 743px) {
-  .content-tips {
-    flex-direction: column-reverse;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .image1 {
-    width: 360px;
-    height: 220px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 600px) {
-  .pasang-loker-button {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-  }
-
-  .pasang-loker-button a {
-    width: 100%;
-  }
-
-    .login-form-container,
-    .regis-form-container {
-      width: 100%;
-      padding: 1rem;
-    }
-  
-    .login-form-container h2,
-    .regis-form-container h2 {
-      font-size: 1.5rem;
-    }
-  
-    .login-form input,
-    .regis-form input {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-  
-    .submit-button,
-    .submit-regis-button {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-  
-    .login-form-container p,
-    .regis-form-container p {
-      font-size: 1rem;
-    }
-
-    .sidebar {
-        width: 150px;
-        padding: 5px;
-    }
-
-    .sidebar h2 {
-        font-size: 1em;
-    }
-
-    .sidebar ul li a {
-        font-size: 0.8em;
-        padding: 4px;
-    }
-
-    .buat-lowongan-container,
-    .edit-lowongan-container {
-      width: 100%;
-      padding: 0 10px;
-    }
-
-    .main-content-buatlowongan h1,
-    .main-content-manajemen h1,
-    .main-content-editloker h1 {
-      font-size: 1.4em;
-    }
-
-    .buat-lowongan-container h2,
-    .edit-lowongan-container h2 {
-      font-size: 1.6rem;
-    }
-
-    .buatloker-form input,
-    .editloker-form input {
-      font-size: 0.8rem;
-    }
-
-    .submit-buatloker-button,
-    .submit-editloker-button {
-      font-size: 0.8rem;
-      padding: 0.55rem;
-    }
-
-    .button-cards {
-      padding: 6px 16px;
-    }  
-}
-
 @media (max-width: 840px) {
   footer {
     grid-template-columns: 1fr;
@@ -309,55 +8,56 @@
     margin-bottom: 15px;
   }
 
-    .footer-nav {
-        flex-direction: column;
-    }
+  .footer-nav {
+    flex-direction: column;
+  }
 
-    .buat-lowongan-container,
-    .edit-lowongan-container {
-      width: 100%;
-      padding: 0 20px;
-    }
+  .buat-lowongan-container,
+  .edit-lowongan-container,
+  .kelolaakun-container {
+    width: 100%;
+    padding: 0 20px;
+  }
 
-    .main-content-buatlowongan h1,
-    .main-content-manajemen h1,
-    .main-content-editloker h1 {
-      font-size: 1.8em;
-    }
+  .main-content-buatlowongan h1,
+  .main-content-manajemen h1,
+  .main-content-kelolaakun h1,
+  .main-content-dashboard h1,
+  .main-content-editloker h1 {
+    font-size: 1.8em;
+  }
 
-    .buat-lowongan-container h2,
-    .edit-lowongan-container h2 {
-      font-size: 2rem;
-    }
+  .buatloker-form input,
+  .buatloker-form textarea,
+  .editloker-form textarea,
+  .editloker-form input,
+  .kelolaakun-form input {
+    font-size: 0.9rem;
+  }
 
-    .buatloker-form input,
-    .editloker-form input {
-      font-size: 0.9rem;
-    }
+  .submit-buatloker-button,
+  .submit-editloker-button {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
 
-    .submit-buatloker-button,
-    .submit-editloker-button {
-      font-size: 0.9rem;
-      padding: 0.65rem;
-    }
+  .button-cards {
+    padding: 10px 20px;
+  }
 
-    .button-cards {
-      padding: 10px 20px;
-    }  
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
 
-    .sidebar {
-        width: 200px;
-        padding: 15px;
-    }
+  .sidebar h2 {
+    font-size: 1.3em;
+  }
 
-    .sidebar h2 {
-        font-size: 1.3em;
-    }
-
-    .sidebar ul li a {
-        font-size: 1em;
-        padding: 8px;
-    }
+  .sidebar ul li a {
+    font-size: 1em;
+    padding: 8px;
+  }
 }
 
 @media screen and (min-width: 840px) {
@@ -401,121 +101,433 @@
 }
 
 @media (max-width: 768px) {
-    .button-cards {
-      padding: 12px 24px;
-    }
-  
-    .sidebar {
-      width: 180px;
-      padding: 10px;
-    }
-  
-    .sidebar h2 {
-      font-size: 1.2em;
-    }
-  
-    .sidebar ul li a {
-      font-size: 0.9em;
-      padding: 6px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .button-cards {
-      padding: 12px 24px; /* Maintaining the same padding as in higher resolutions */
-    }
-  
-    .sidebar {
-      width: 100px;
-      padding: 5px;
-    }
-  
-    .sidebar h2 {
-      font-size: 1.2em;
-    }
-  
-    .sidebar ul li a {
-      font-size: 0.9em;
-      padding: 6px;
-    }
-  }
-  
-  @media (max-width: 375px) {
-    .sidebar {
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-  
-    .sidebar h2 {
-      font-size: 1em;
-    }
-  
-    .sidebar ul li a {
-      font-size: 0.8em;
-      padding: 4px;
-    }
-  }
-  
-  @media (max-width: 375px) {
-    .buat-lowongan-container {
-      width: 100%;
-      padding: 0 10px;
-      box-sizing: border-box;
-    }
-  
-    .judul-buatloker {
-      font-size: 24px;
-    }
-  
-    .submit-text {
-      font-size: 14px;
-      margin-top: 8px;
-    }
+  .pusat-bantuan-title {
+    font-size: 36px;
   }
 
-  /* Additional responsive rules for kelola-akun */
+  .pusat-bantuan h3 {
+    font-size: 29px;
+  }
 
-@media (max-width: 768px) {
-    .main-content-kelolaakun h1 {
-      font-size: 1.6em;
-      margin-bottom: 1.5em; /* Ensure the gap is significant */
-    }
-  
-    .kelolaakun-container {
-      width: 90%;
-      padding: 1rem;
-    }
-  
-    .kelolaakun-form input {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-  
-    .submit-kelolaakun-button {
-      padding: 0.6rem;
-      font-size: 0.875rem;
-    }
+  .pusat-bantuan p {
+    font-size: 17px;
   }
-  
-  @media (max-width: 480px) {
-    .main-content-kelolaakun h1 {
-      font-size: 1.4em;
-      margin-bottom: 1.5em; /* Ensure the gap is significant */
-    }
-  
-    .kelolaakun-container {
-      width: 100%;
-      padding: 0 10px;
-    }
-  
-    .kelolaakun-form input {
-      padding: 0.5rem;
-      font-size: 0.875rem;
-    }
-  
-    .submit-kelolaakun-button {
-      padding: 0.5rem;
-      font-size: 0.75rem;
-    }
+
+  .pasang-loker-title {
+    font-size: 40px;
   }
+
+  .pasang-loker-description {
+    font-size: 22px;
+  }
+
+  .login-form-container,
+  .regis-form-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .login-form-container h2,
+  .regis-form-container h2 {
+    font-size: 2rem;
+  }
+
+  .login-form input,
+  .regis-form input {
+    padding: 0.5rem;
+  }
+
+  .submit-button,
+  .submit-regis-button {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .buat-lowongan-container,
+  .edit-lowongan-container,
+  .kelolaakun-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .main-content-buatlowongan h1,
+  .main-content-dashboard h1,
+  .main-content-manajemen h1,
+  .main-content-kelolaakun h1,
+  .main-content-editloker h1 {
+    font-size: 1.6em;
+  }
+
+  .buatloker-form input,
+  .buatloker-form textarea,
+  .editloker-form textarea,
+  .kelolaakun-form input,
+  .editloker-form input {
+    font-size: 0.85rem;
+  }
+
+  .submit-buatloker-button,
+  .submit-editloker-button,
+  .submit-kelolaakun-button {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .button-cards {
+    padding: 8px 18px;
+  }
+
+  .sidebar {
+    width: 180px;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .about-loker {
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .image-about {
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-subtitle {
+    font-size: 25px;
+  }
+
+  .about-subarticle {
+    font-size: 20px;
+  }
+
+  .about-loker p {
+    font-size: 18px;
+  }
+
+  .about-loker h5 {
+    font-size: 18px;
+  }
+
+  .about-loker h6 {
+    font-size: 18px;
+  }
+
+  .button-cards {
+    padding: 12px 24px;
+  }
+
+  .sidebar {
+    width: 180px;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .content-tips {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .image1 {
+    width: 360px;
+    height: 220px;
+    margin-top: 15px;
+  }
+
+  .tips-loker-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+
+  .buatloker-form input::placeholder,
+  .buatloker-form textarea::placeholder,
+  .kelolaakun-form input::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pasang-loker-button {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .pasang-loker-button a {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .login-form-container,
+  .regis-form-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .login-form-container h2,
+  .regis-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input,
+  .regis-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .submit-button,
+  .submit-regis-button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .login-form-container p,
+  .regis-form-container p {
+    font-size: 1rem;
+  }
+
+  .sidebar {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .sidebar h2 {
+    font-size: 1em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.8em;
+    padding: 4px;
+  }
+
+  .buat-lowongan-container,
+  .kelolaakun-container,
+  .edit-lowongan-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .buat-lowongan-container p,
+  .kelolaakun-container p,
+  .edit-lowongan-container p {
+    font-size: 14px;
+  }
+
+  .main-content-buatlowongan h1,
+  .main-content-manajemen h1,
+  .main-content-dashboard h1,
+  .main-content-kelolaakun h1,
+  .main-content-editloker h1 {
+    font-size: 1.4em;
+  }
+
+  .buatloker-form input,
+  .buatloker-form textarea,
+  .kelolaakun-form input,
+  .editloker-form textarea,
+  .editloker-form input {
+    font-size: 0.9rem;
+  }
+
+  .submit-buatloker-button,
+  .submit-kelolaakun-button,
+  .submit-editloker-button {
+    font-size: 0.8rem;
+    padding: 0.55rem;
+  }
+
+  .button-cards {
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pusat-bantuan-title {
+    font-size: 28px;
+  }
+
+  .pusat-bantuan h3 {
+    font-size: 23px;
+  }
+
+  .pusat-bantuan p {
+    font-size: 14px;
+  }
+
+  .login-form-container h2,
+  .regis-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input,
+  .regis-form input {
+    padding: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .submit-button,
+  .submit-regis-button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .login-form-container p,
+  .regis-form-container p {
+    font-size: 0.875rem;
+  }
+
+  .sidebar {
+    width: 100px;
+    padding: 5px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .about-loker {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-subtitle {
+    font-size: 23px;
+  }
+
+  .about-subarticle {
+    font-size: 26px;
+  }
+
+  .about-loker p {
+    font-size: 16px;
+  }
+
+  .about-loker h5 {
+    font-size: 16px;
+  }
+
+  .about-loker h6 {
+    font-size: 16px;
+  }
+
+  .button-cards {
+    padding: 12px 24px;
+    /* Maintaining the same padding as in higher resolutions */
+  }
+
+  .sidebar {
+    width: 100px;
+    padding: 5px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .main-content-buatlowongan h1,
+  .main-content-manajemen h1,
+  .main-content-dashboard h1,
+  .main-content-kelolaakun h1,
+  .main-content-editloker h1 {
+    font-size: 1.4em;
+  }
+
+  .buat-lowongan-container,
+  .kelolaakun-container,
+  .edit-lowongan-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .buatloker-form input,
+  .buatloker-form textarea,
+  .editloker-form textarea,
+  .editloker-form input,
+  .kelolaakun-form input {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .submit-kelolaakun-button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .buatloker-form input::placeholder,
+  .buatloker-form textarea::placeholder,
+  .kelolaakun-form input::placeholder {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .sidebar h2 {
+    font-size: 1em;
+  }
+
+  .sidebar ul li a {
+    font-size: 0.8em;
+    padding: 4px;
+  }
+
+  .buat-lowongan-container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .judul-buatloker {
+    font-size: 24px;
+  }
+
+  .submit-text {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
