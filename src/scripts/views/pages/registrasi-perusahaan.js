@@ -20,7 +20,7 @@ const Registrasi = {
           <label for="password">Password</label>
           <div class="password-container">
             <input type="password" id="password" name="password" placeholder="Password" required>
-            <i class="toggle-password" id="togglePassword">👁️</i>
+            <i class="toggle-password" id="togglePassword">🔓</i>
           </div>
           <p class="input-hint">Must be at least 8 characters</p>
           <button type="submit" class="submit-regis-button">Create</button>
@@ -38,7 +38,7 @@ const Registrasi = {
     togglePassword.addEventListener('click', () => {
       const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
       passwordInput.setAttribute('type', type);
-      togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+      togglePassword.textContent = type === 'password' ? '🔓' : '🔒';
     });
 
     form.addEventListener('submit', async (event) => {
@@ -50,6 +50,12 @@ const Registrasi = {
       const email = document.getElementById('email').value;
       const nikPenanggungJawab = document.getElementById('nikPenanggungJawab').value;
       const password = document.getElementById('password').value;
+
+      // Validasi panjang password
+      if (password.length < 8) {
+        alert('Buat password minimal 8 karakter');
+        return;
+      }
 
       const hashedPassword = await bcrypt.hash(password, 10);
 

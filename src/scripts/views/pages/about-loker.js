@@ -39,21 +39,48 @@ const About = {
                   <h6>
                     Dwita Anatasya
                   </h6>
-                  <p>
-                    Mahasiswi Universitas Palangka Raya.
-                    Mahasiswi Universitas Palangka Raya.
+                   <p>
+                    Saya <strong>Dwita Anatasya</strong> yang lebih dikenal dengan sebutan <strong>Dwita</strong>, saya seorang mahasiswi semester 6 di Universitas Palangka Raya jurusan Teknik Informatika.
+                    Jika Anda ingin terhubung dengan saya, silakan kunjungi akun media sosial saya di bawah ini: 
+                  </p>
+                  <div class="icon-sosmed">
+                    <a id="linkedin" href="https://www.linkedin.com/in/dwita-anatasya-b92877308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a id="github" href="https://github.com/dwitaanatasya" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <h6>
                     Nur Azizah Rabiulakhhir
                   </h6>
                   <p>
-                    Mahasiswi Universitas Palangka Raya.
+                    Saya <strong>Nur Azizah Rabiulakhhir</strong> yang lebih dikenal dengan sebutan <strong>Jijah</strong>, saya seorang mahasiswi semester 6 di Universitas Palangka Raya jurusan Teknik Informatika.
+                    Jika Anda ingin terhubung dengan saya, silakan kunjungi akun media sosial saya di bawah ini: 
                   </p>
+                  <div class="icon-sosmed">
+                    <a id="linkedin" href="https://linkedin.com/in/nurazizahrabiulakhhir" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a id="github" href="https://github.com/Nurazizahra" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                   <h6>
                     El Emir Di Haryanto
                   </h6>
                   <p>
-                    Mahasiswa Universitas Pancasila.
+                    Saya <strong>El Emir Di Haryanto</strong> yang lebih dikenal dengan sebutan <strong>Emir</strong>, saya seorang mahasiswa semester 6 di Universitas Pancasila jurusan Teknik Informatika.
+                    Jika Anda ingin terhubung dengan saya, silakan kunjungi akun media sosial saya di bawah ini: 
                   </p>
+                  <div class="icon-sosmed">
+                    <a id="linkedin" href="http://www.linkedin.com/in/el-emir-di-haryanto-775383296" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a id="github" href="https://github.com/elemir07" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </div>
             </div>
             <div class="image-about-loker">
                 <img class="image-about" src="./logo.png" alt="Logo DAE Recruiters" />

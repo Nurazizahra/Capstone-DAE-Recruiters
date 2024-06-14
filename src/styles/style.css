@@ -495,6 +495,10 @@ main {
   text-decoration: none;
 }
 
+.icon-sosmed a:hover i.fa-github {
+  color: #0a0896; /* Example color change on hover for Instagram */
+}
+
 .image-about {
   width: 300px;
   height: auto;

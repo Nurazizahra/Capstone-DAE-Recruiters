@@ -12,7 +12,7 @@ const Login = {
             <label for="password">Password</label>
             <div class="password-container">
               <input type="password" id="password" name="password" placeholder="Password" required>
-              <i class="toggle-password" id="togglePassword">👁️</i>
+              <i class="toggle-password" id="togglePassword">🔓</i>
             </div>
             <button type="submit" class="submit-button">Login</button>
           </form>
@@ -29,7 +29,7 @@ const Login = {
         togglePassword.addEventListener('click', () => {
             const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordInput.setAttribute('type', type);
-            togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+            togglePassword.textContent = type === 'password' ? '🔓' : '🔒';
         });
 
         loginForm.addEventListener('submit', async (event) => {
