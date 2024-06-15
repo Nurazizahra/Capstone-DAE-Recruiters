@@ -89,7 +89,7 @@ const Registrasi = {
 
         console.log('Data inserted successfully:', data);
         alert('Account created successfully!');
-        window.location.hash = '#/home';
+        window.location.hash = '#/login';
       } catch (error) {
         console.error('Error creating account:', error);
         alert('Error creating account. Please try again.');

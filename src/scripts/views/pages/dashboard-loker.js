@@ -1,5 +1,6 @@
 import supabase from '../../config/supabase.js';
 import UrlParser from '../../routes/url-parser.js';
+import '../../component/sidebar.js';
 
 const Dashboard = {
   async render() {
@@ -51,7 +52,7 @@ const Dashboard = {
               <p class="highlight"><a href="${detailUrl}">${companyData.nama_perusahaan}</a></p>
               <p class="highlight">Gaji: ${job.gaji}</p>
               <p class="highlight">Lokasi: ${companyData.alamat}</p>
-              <p>${truncatedDescription}</p>
+              <p class="description">${truncatedDescription}</p>
             </div>
           `;
         }).join('');
@@ -61,14 +62,9 @@ const Dashboard = {
 
       return `
         <div class="dashboard-container">
-          <div class="sidebar">
-              <ul>
-                  <li><a href="#/dashboard">Dashboard</a></li>
-                  <li><a href="#/buatloker">Buat Lowongan Baru</a></li>
-                  <li><a href="#/manajemenloker">Manajemen Lowongan</a></li>
-                  <li><a href="#/kelolaakun">Kelola Akun</a></li>
-              </ul>
-          </div>
+         <div class="sidebar">
+          <custom-sidebar></custom-sidebar>
+        </div>
           <div class="main-content-dashboard">
               <h1>Iklan Lowongan Kerja Anda</h1>
               <div class="job-cards">
@@ -104,6 +100,18 @@ const Dashboard = {
         loginButton.href = '#/login';
       });
     }
+
+    // Menambahkan kelas aktif ke elemen menu yang sesuai
+    const currentPath = window.location.hash.split('/')[1];
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+      if (item.getAttribute('data-route') === currentPath) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
   },
 };
 

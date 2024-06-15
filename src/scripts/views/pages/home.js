@@ -46,12 +46,13 @@ const Home = {
             <p class="highlight"><a href="/#/detail/${job.id}">${job.nama_perusahaan}</a></p>
             <p class="highlight">Gaji: ${job.gaji}</p>
             <p class="highlight">Lokasi: ${job.alamat}</p>
-            <p>${truncatedDescription}</p>
+            <p class="description">${truncatedDescription}</p>
           </div>
         `;
       }).join('');
 
       return `
+      <div class="home-page">
         <section class="hero">
             <h1>Temukan Karir Impian Anda Bersama Kami!</h1>
             <p>Jelajahi lowongan kerja dari berbagai industri dan temukan peluang yang tepat untuk karir Anda di DAE Recruiters</p>
@@ -68,6 +69,7 @@ const Home = {
                 ${jobCards}
             </div>
         </section>
+      </div>
       `;
     } catch (error) {
       console.error('Error fetching data:', error.message);

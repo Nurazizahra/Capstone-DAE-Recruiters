@@ -1,18 +1,14 @@
 import supabase from '../../config/supabase.js';
 import UrlParser from '../../routes/url-parser.js';
+import '../../component/sidebar.js';
 
 const Edit = {
   async render() {
     return `
     <div class="dashboard-container">
-      <div class="sidebar">
-          <ul>
-              <li><a href="#/dashboard">Dashboard</a></li>
-              <li><a href="#/buatloker">Buat Lowongan Baru</a></li>
-              <li><a href="#/manajemenloker">Manajemen Lowongan</a></li>
-              <li><a href="#/kelolaakun">Kelola Akun</a></li>
-          </ul>
-      </div>
+     <div class="sidebar">
+      <custom-sidebar></custom-sidebar>
+     </div>
       <div class="main-content-editloker">
           <h1>Edit Lowongan Kerja Anda</h1>
           <p class="subHeader">Edit lowongan kerja Anda dengan mengganti Isi formulir iklan lowongan kerja di bawah ini</p>
@@ -135,6 +131,10 @@ const Edit = {
         alert('Lowongan berhasil diperbarui');
         window.location.href = '#/manajemenloker';
       });
+
+      // Menambahkan kelas aktif ke elemen menu Manajemen
+      document.querySelector('a[data-route="manajemenloker"]').classList.add('active');
+
     } catch (error) {
       console.error('Error:', error.message);
       alert('Terjadi kesalahan saat memuat data. Silakan coba lagi.');

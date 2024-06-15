@@ -1,17 +1,13 @@
 import supabase from '../../config/supabase.js';
+import '../../component/sidebar.js';
 
 const Buat = {
   async render() {
     return `
     <div class="dashboard-container">
-      <div class="sidebar">
-          <ul>
-              <li><a href="#/dashboard">Dashboard</a></li>
-              <li><a href="#/buatloker">Buat Lowongan Baru</a></li>
-              <li><a href="#/manajemenloker">Manajemen Lowongan</a></li>
-              <li><a href="#/kelolaakun">Kelola Akun</a></li>
-          </ul>
-      </div>
+    <div class="sidebar">
+      <custom-sidebar></custom-sidebar>
+    </div>
       <div class="main-content-buatlowongan">
           <h1>Buat Lowongan Kerja Anda</h1>
           <p class="subHeader">Isi formulir iklan lowongan kerja di bawah ini dengan lengkap dan sebenar-benarnya</p>
@@ -61,9 +57,9 @@ const Buat = {
               <button type="submit" class="submit-buatloker-button">Pasang Lowongan</button>
               <p>Pastikan untuk mengecek ulang informasi lowongan kerja di atas sebelum menekan tombol "Pasang Lowongan".</p>
             </form>
-          <div>
-      <div>
-    <div>    
+          </div>
+      </div>
+    </div>    
     `;
   },
 
@@ -122,6 +118,18 @@ const Buat = {
       } else {
         alert('Lowongan berhasil dipasang!');
         window.location.hash = '#/dashboard';
+      }
+    });
+
+    // Menambahkan kelas aktif ke elemen menu yang sesuai
+    const currentPath = window.location.hash.split('/')[1];
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+      if (item.getAttribute('data-route') === currentPath) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
       }
     });
   },

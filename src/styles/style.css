@@ -39,7 +39,6 @@ body {
   min-height: 44px;
   text-decoration: none;
   color: white !important;
-  color: white !important;
 }
 
 /* Header */
@@ -130,14 +129,16 @@ nav ul li a {
 
 /* Main Content */
 main {
-  padding: 16px;
   flex: 1;
+}
+
+/* Home Content */
+.home-page {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
 
-/* Home Content */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -165,7 +166,7 @@ main {
 .hero a {
   background-color: black;
   color: white;
-  padding: 20px 30px;
+  padding: 15px 25px;
   cursor: pointer;
   border-radius: 10px;
   font-size: 18px;
@@ -209,8 +210,8 @@ main {
 
 .job-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px 30px;
 }
 
 .job-cards .job-card {
@@ -230,7 +231,7 @@ main {
   font-size: large;
 }
 
-.job-cards .job-card p {
+.job-card .description {
   text-align: justify;
 }
 
@@ -247,6 +248,12 @@ main {
 }
 
 /* Detail Loker Content */
+.data-loker {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .data-loker h2 {
   margin-top: 20px;
   font-size: xx-large;
@@ -297,16 +304,19 @@ main {
 }
 
 .icon-sosmed i {
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
+  /* Adjust the size as needed */
   transition: color 0.3s;
 }
 
 .icon-sosmed a:hover i {
-  color: #0077b5; /* Example color change on hover for LinkedIn */
+  color: #0077b5;
+  /* Example color change on hover for LinkedIn */
 }
 
 .icon-sosmed a:hover i.fa-instagram {
-  color: #e4405f; /* Example color change on hover for Instagram */
+  color: #e4405f;
+  /* Example color change on hover for Instagram */
 }
 
 .data-loker h5 {
@@ -330,21 +340,27 @@ main {
 }
 
 .icon-sosmed i {
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
+  /* Adjust the size as needed */
   transition: color 0.3s;
 }
 
 .icon-sosmed a:hover i {
-  color: #0077b5; /* Example color change on hover for LinkedIn */
+  color: #0077b5;
+  /* Example color change on hover for LinkedIn */
 }
 
 .icon-sosmed a:hover i.fa-instagram {
-  color: #e4405f; /* Example color change on hover for Instagram */
+  color: #e4405f;
+  /* Example color change on hover for Instagram */
 }
 
 /* Pasang Loker Content */
 .pasang-loker-frame {
   text-align: center;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .pasang-loker-content {
@@ -383,17 +399,15 @@ main {
   border-radius: 10px;
   margin: 5px;
   width: calc(50% - 30px);
-  font-size: 20px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 10px;
-  margin: 5px;
-  width: calc(50% - 30px)
 }
 
 /* Tips Loker Content */
+.tips-loker {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .tips-loker-title {
   color: #000000;
   font-family: 'Inter-Bold', sans-serif;
@@ -432,6 +446,12 @@ main {
 }
 
 /* Tentang Loker Content */
+.about-page {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .about-title {
   color: #000000;
   font-family: 'Inter-Bold', sans-serif;
@@ -496,7 +516,8 @@ main {
 }
 
 .icon-sosmed a:hover i.fa-github {
-  color: #0a0896; /* Example color change on hover for Instagram */
+  color: #0a0896;
+  /* Example color change on hover for Instagram */
 }
 
 .image-about {
@@ -505,6 +526,12 @@ main {
 }
 
 /* Pusat Bantuan Content */
+.pusat-bantuan {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .pusat-bantuan-title {
   color: #000000;
   font-family: 'Inter-Bold', sans-serif;
@@ -529,7 +556,6 @@ main {
   font-size: 20px;
   line-height: 150%;
   font-weight: 500;
-  text-align: justify;
   margin-bottom: 10px;
 }
 
@@ -537,6 +563,17 @@ main {
   color: rgb(0, 0, 0);
   font-weight: 700;
   text-decoration: none;
+}
+
+.pusat-bantuan ul li {
+  list-style-type: none;
+  color: #000000;
+  font-family: 'Inter-Medium', sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 /* Login Content */
@@ -592,6 +629,7 @@ main {
   text-decoration: none;
   font-weight: bold;
 }
+
 .login-form-container {
   font-family: 'Poppins', sans-serif;
   padding: 2rem;
@@ -705,6 +743,7 @@ main {
   text-decoration: none;
   font-weight: bold;
 }
+
 .regis-form-container {
   font-family: 'Poppins', sans-serif;
   padding: 2rem;
@@ -782,7 +821,7 @@ main {
   user-select: none;
 }
 
-/* Dashboard Loker */
+/* Dashboard Sidebar Content */
 .dashboard-container {
   display: flex;
   max-width: 1200px;
@@ -792,8 +831,8 @@ main {
 .sidebar {
   background-color: #fff;
   padding: 20px;
-  width: 250px;
-  min-height: 100vh;
+  width: 300px;
+  min-height: 85vh;
   border-right: 1px solid black;
 }
 
@@ -812,11 +851,25 @@ main {
 }
 
 .sidebar ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.1em;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1em;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar ul li a.active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .sidebar ul li a:hover {
@@ -826,6 +879,7 @@ main {
   padding: 10px;
 }
 
+/* Dashboard Loker */
 .main-content-dashboard {
   flex: 1;
   padding: 20px;
@@ -935,9 +989,9 @@ main {
   margin-top: 1em;
   display: inline-block;
   padding: 12px 24px;
-  background-color: black; 
+  background-color: black;
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -949,9 +1003,9 @@ main {
   margin-top: 1em;
   display: inline-block;
   padding: 12px 24px;
-  background-color: black; 
+  background-color: black;
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -1096,7 +1150,7 @@ main {
   border-radius: 15px;
   cursor: pointer;
   font-size: 1rem;
-  margin-top:  0.8em;
+  margin-top: 0.8em;
 }
 
 .kelolaakun-form-container p {
@@ -1158,4 +1212,6 @@ footer .footer-nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  min-height: 44px;
+  min-width: 44px;
 }

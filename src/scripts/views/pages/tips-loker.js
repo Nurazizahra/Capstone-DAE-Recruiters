@@ -1,6 +1,7 @@
 const Tips = {
   async render() {
     return `
+    <div class="tips-loker">
           <h2 class="tips-loker-title">Tips Loker</h2>
           <h3 class="tips-loker-subtitle">Kenali dan Waspadai Sebelum Melamar</h3>
           <div class="content-tips">
@@ -30,6 +31,7 @@ const Tips = {
               <img class="image1" src="./tipsloker.png" alt="Tips Loker" />
             </div>
           </div>
+        </div>
       `;
   },
 

@@ -1,6 +1,7 @@
 const About = {
   async render() {
     return `
+    <div class="about-page">
           <h2 class="about-title">Tentang Loker</h2>
           <h3 class="about-subtitle"> Mengenal lebih dekat tim di balik DAE Recruiters</h3>
           <div class="about-loker">
@@ -86,6 +87,7 @@ const About = {
                 <img class="image-about" src="./logo.png" alt="Logo DAE Recruiters" />
             </div>
           </div>
+        </div>
       `;
   },
 

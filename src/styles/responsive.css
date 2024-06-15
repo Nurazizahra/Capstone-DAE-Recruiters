@@ -8,6 +8,10 @@
     margin-bottom: 15px;
   }
 
+  .footer-copyright {
+    margin-left: 8px;
+  }
+
   .footer-nav {
     flex-direction: column;
   }
@@ -16,7 +20,6 @@
   .edit-lowongan-container,
   .kelolaakun-container {
     width: 100%;
-    padding: 0 20px;
   }
 
   .main-content-buatlowongan h1,
@@ -113,6 +116,10 @@
     font-size: 17px;
   }
 
+  .pusat-bantuan ul li {
+    font-size: 17px;
+  }
+
   .pasang-loker-title {
     font-size: 40px;
   }
@@ -147,7 +154,7 @@
   .edit-lowongan-container,
   .kelolaakun-container {
     width: 100%;
-    padding: 0 15px;
+
   }
 
   .main-content-buatlowongan h1,
@@ -251,6 +258,10 @@
     align-items: center;
   }
 
+  .content-tips p {
+    font-size: 18px;
+  }
+
   .image1 {
     width: 360px;
     height: 220px;
@@ -258,7 +269,11 @@
   }
 
   .tips-loker-title {
-    font-size: 40px;
+    font-size: 36px;
+  }
+
+  .tips-loker-subtitle {
+    font-size: 25px;
   }
 }
 
@@ -330,7 +345,6 @@
   .kelolaakun-container,
   .edit-lowongan-container {
     width: 100%;
-    padding: 0 10px;
   }
 
   .buat-lowongan-container p,
@@ -367,16 +381,38 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .pusat-bantuan-title {
     font-size: 28px;
   }
 
   .pusat-bantuan h3 {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .pusat-bantuan p {
+    font-size: 14px;
+  }
+
+  .content-tips p {
+    font-size: 14px;
+  }
+
+  .image1 {
+    width: 300px;
+    height: 190px;
+    margin-top: 15px;
+  }
+
+  .tips-loker-title {
+    font-size: 28px;
+  }
+
+  .tips-loker-subtitle {
+    font-size: 21px;
+  }
+
+  .pusat-bantuan ul li {
     font-size: 14px;
   }
 
@@ -402,23 +438,15 @@
     font-size: 0.875rem;
   }
 
-  .sidebar {
-    width: 100px;
-    padding: 5px;
-  }
-
-  .sidebar h2 {
-    font-size: 1.2em;
-  }
-
-  .sidebar ul li a {
-    font-size: 0.9em;
-    padding: 6px;
-  }
-
   .about-loker {
     flex-direction: column-reverse;
     gap: 25px;
+  }
+
+  .image-about {
+    width: 190px;
+    height: auto;
+    margin-top: 15px;
   }
 
   .about-title {
@@ -426,11 +454,11 @@
   }
 
   .about-subtitle {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .about-subarticle {
-    font-size: 26px;
+    font-size: 21px;
   }
 
   .about-loker p {
@@ -451,7 +479,6 @@
   }
 
   .sidebar {
-    width: 100px;
     padding: 5px;
   }
 
@@ -476,7 +503,6 @@
   .kelolaakun-container,
   .edit-lowongan-container {
     width: 100%;
-    padding: 0 10px;
   }
 
   .buatloker-form input,
@@ -497,6 +523,37 @@
   .buatloker-form textarea::placeholder,
   .kelolaakun-form input::placeholder {
     font-size: 10px;
+  }
+
+  .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px 20px;
+  }
+
+  .job-card {
+    background-color: #eaeaea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 18px;
+  }
+
+  .job-card .highlight a {
+    font-size: medium;
+    text-align: justify;
+  }
+
+  .pasang-loker-title {
+    font-size: 28px;
+  }
+  
+  .pasang-loker-description {
+    font-size: 16px;
+  }
+
+  .pasang-loker-content a {
+    padding: 10px;
+    font-size: 13px;
   }
 }
 
@@ -529,5 +586,105 @@
   .submit-text {
     font-size: 14px;
     margin-top: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .image-tips {
+    max-width: 300px;
+  }
+
+  .image1 {
+    max-width: fit-content;
+    margin-left: 11px;
+    margin-bottom: 7px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero a {
+    padding: 15px 25px;
+  }
+
+  .search-jobs h2 {
+    font-size: 32px;
+  }
+
+  .search-bar input {
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .search-bar button {
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .tips-loker-subtitle {
+    font-size: 22px;
+    margin-top: 0.5em;
+  }
+
+  .content-tips p {
+    font-size: 16px;
+  }
+
+  .pasang-loker-content h2{
+    font-size: 32px;
+  }
+
+  .pasang-loker-content p {
+    font-size: 16px;
+  }
+
+  footer .footer-nav ul li h4 {
+    font-size: 16px;
+  }
+
+  footer .footer-nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+  }
+
+  .footer-copyright img {
+    max-width: 175px;
+  }
+
+  .about-subarticle {
+    font-size: 20px;
+  }
+
+  .about-subtitle {
+    margin-top: 0.5em;
+  }
+  
+  .main-content-dashboard {
+    padding: 5px;
+  }
+
+  .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    gap: 35px 15px;
+  }
+
+  .job-card {
+    background-color: #eaeaea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 18px;
+  }
+
+  .job-card .highlight a {
+    font-size: medium;
   }
 }

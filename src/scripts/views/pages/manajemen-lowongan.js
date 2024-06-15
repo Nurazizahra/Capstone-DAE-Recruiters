@@ -1,4 +1,5 @@
 import supabase from '../../config/supabase.js';
+import '../../component/sidebar.js';
 
 const Manajemen = {
   async render() {
@@ -45,11 +46,11 @@ const Manajemen = {
           return `
             <div class="job-card">
               <h3>${job.posisi}</h3>
-              <p class="highlight">${companyData.nama_perusahaan}</a></p>
+              <p class="highlight">${companyData.nama_perusahaan}</p>
               <p class="highlight">Gaji: ${job.gaji}</p>
               <p class="highlight">Lokasi: ${companyData.alamat}</p>
-              <p>${truncatedDescription}</p>
-              <a href="#/editloker/${job.id}" class="edit-button">Edit</a> <!-- Menggunakan hash untuk navigasi single-page application -->
+              <p class="description">${truncatedDescription}</p>
+              <a href="#/editloker/${job.id}" class="edit-button">Edit</a>
               <button class="hapus-button" onclick="hapusLoker('${job.id}')">Hapus</button>
             </div>
           `;
@@ -61,14 +62,9 @@ const Manajemen = {
 
       return `
         <div class="dashboard-container">
-          <div class="sidebar">
-            <ul>
-              <li><a href="#/dashboard">Dashboard</a></li>
-              <li><a href="#/buatloker">Buat Lowongan Baru</a></li>
-              <li><a href="#/manajemenloker">Manajemen Lowongan</a></li>
-              <li><a href="#/kelolaakun">Kelola Akun</a></li>
-            </ul>
-          </div>
+         <div class="sidebar">
+          <custom-sidebar></custom-sidebar>
+        </div>
           <div class="main-content-manajemen">
             <h1>Manajemen Iklan Lowongan Kerja Anda</h1>
             <div class="job-cards">
@@ -84,7 +80,17 @@ const Manajemen = {
   },
 
   async afterRender() {
-    // Jangan dihapus, biarin aja kosong agar tidak error
+    // Menambahkan kelas aktif ke elemen menu yang sesuai
+    const currentPath = window.location.hash.split('/')[1];
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+      if (item.getAttribute('data-route') === currentPath) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
   },
 };
 
