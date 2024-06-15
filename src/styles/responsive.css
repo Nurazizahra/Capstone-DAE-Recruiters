@@ -531,3 +531,82 @@
     margin-top: 8px;
   }
 }
+
+@media (max-width: 320px) {
+  .image-tips {
+    max-width: 300px;
+  }
+
+  .image1 {
+    max-width: fit-content;
+    margin-left: 11px;
+    margin-bottom: 7px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero a {
+    padding: 15px 25px;
+  }
+
+  .search-jobs h2 {
+    font-size: 32px;
+  }
+
+  .search-bar input {
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .search-bar button {
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .tips-loker-subtitle {
+    font-size: 22px;
+    margin-top: 0.5em;
+  }
+
+  .content-tips p {
+    font-size: 16px;
+  }
+
+  .pasang-loker-content h2{
+    font-size: 32px;
+  }
+
+  .pasang-loker-content p {
+    font-size: 16px;
+  }
+
+  footer .footer-nav ul li h4 {
+    font-size: 16px;
+  }
+
+  footer .footer-nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+  }
+
+  .footer-copyright img {
+    max-width: 175px;
+  }
+
+  .about-subarticle {
+    font-size: 20px;
+  }
+
+  .about-subtitle {
+    margin-top: 0.5em;
+  }
+}
