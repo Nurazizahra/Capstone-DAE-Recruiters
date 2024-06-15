@@ -609,4 +609,26 @@
   .about-subtitle {
     margin-top: 0.5em;
   }
+  
+  .main-content-dashboard {
+    padding: 5px;
+  }
+
+  .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+
+  .job-card {
+    background-color: #eaeaea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 18px;
+  }
+
+  .job-card .highlight a {
+    font-size: medium;
+    text-align: justify;
+  }
 }
