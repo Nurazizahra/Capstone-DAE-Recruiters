@@ -38,7 +38,6 @@ const Detail = {
     const jobId = url.id;
 
     try {
-      // Mengambil data lowongan berdasarkan ID
       const { data: job, error: jobError } = await supabase
         .from('lowongan')
         .select('*')
@@ -49,7 +48,6 @@ const Detail = {
         throw new Error(`Failed to fetch job data: ${jobError.message}`);
       }
 
-      // Mengambil data perusahaan berdasarkan ID perusahaan dari data lowongan
       const { data: company, error: companyError } = await supabase
         .from('perusahaan')
         .select('nama_perusahaan, alamat')
@@ -60,14 +58,12 @@ const Detail = {
         throw new Error(`Failed to fetch company data: ${companyError.message}`);
       }
 
-      // Format tanggal menjadi DD-MM-YYYY
       const formattedDate = new Date(job.dibuat).toLocaleDateString('id-ID', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
-      }).replace(/\//g, '-');
+      }).replace(/\//g, ' - ');
 
-      // Memperbarui konten halaman dengan data yang diambil
       document.querySelector('#posisi').textContent = job.posisi;
       document.querySelector('#nama-perusahaan').textContent = `${company.nama_perusahaan}, ${company.alamat}`;
       document.querySelector('#linkedin').href = job.tautan_linkedin;

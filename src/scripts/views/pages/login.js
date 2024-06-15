@@ -40,7 +40,6 @@ const Login = {
       const password = formData.get('password');
 
       try {
-        // Ambil data user dari Supabase berdasarkan email
         const { data: user, error } = await supabase
           .from('perusahaan')
           .select('*')
@@ -52,22 +51,17 @@ const Login = {
         }
 
         if (user) {
-          // Verifikasi password menggunakan bcrypt
           const isPasswordValid = await bcrypt.compare(password, user.password);
 
           if (isPasswordValid) {
-            // Simpan id perusahaan dan status login ke session storage
             sessionStorage.setItem('companyId', user.id);
             sessionStorage.setItem('isLoggedIn', 'true');
 
-            // Login berhasil, alihkan ke halaman dashboard
             window.location.hash = '#/dashboard';
           } else {
-            // Password salah
             alert('Email atau password yang Anda masukkan salah. Silakan coba lagi.');
           }
         } else {
-          // Email tidak ditemukan
           alert('Email atau password yang Anda masukkan salah. Silakan coba lagi.');
         }
       } catch (error) {

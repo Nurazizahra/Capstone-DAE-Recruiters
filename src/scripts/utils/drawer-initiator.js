@@ -1,6 +1,6 @@
 const DrawerInitiator = {
   init({ button, drawer, content }) {
-    if (!button || !drawer || !content) return; // Tambahkan pengecekan apakah elemen ada atau tidak
+    if (!button || !drawer || !content) return;
 
     button.addEventListener('click', (event) => {
       this._toggleDrawer(event, drawer);

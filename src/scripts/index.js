@@ -4,7 +4,7 @@ import App from './views/app.js';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
-  drawer: document.querySelector('#NavigationDrawer'), // Ubah menjadi NavigationDrawer
+  drawer: document.querySelector('#NavigationDrawer'),
   content: document.querySelector('#mainContent'),
 });
 

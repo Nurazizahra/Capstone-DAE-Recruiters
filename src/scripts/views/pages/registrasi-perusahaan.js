@@ -23,6 +23,11 @@ const Registrasi = {
             <i class="toggle-password" id="togglePassword">🔓</i>
           </div>
           <p class="input-hint">Must be at least 8 characters</p>
+          <label for="confirmNewPassword">Konfirmasi Password Baru</label>
+          <div class="password-container">
+            <input type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Konfirmasi password Anda" required>
+            <i class="toggle-password" id="toggleConfirmNewPassword">🔓</i>
+          </div>
           <button type="submit" class="submit-regis-button">Create</button>
         </form>
         <p>Already have an account? <a href="#/login">Login</a></p>
@@ -50,10 +55,15 @@ const Registrasi = {
       const email = document.getElementById('email').value;
       const nikPenanggungJawab = document.getElementById('nikPenanggungJawab').value;
       const password = document.getElementById('password').value;
+      const confirmNewPassword = document.querySelector('#confirmNewPassword').value;
 
-      // Validasi panjang password
       if (password.length < 8) {
         alert('Buat password dengan panjang minimal 8 karakter.');
+        return;
+      }
+
+      if (password !== confirmNewPassword) {
+        alert('Konfirmasi password tidak sesuai.');
         return;
       }
 

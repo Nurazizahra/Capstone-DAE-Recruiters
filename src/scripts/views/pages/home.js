@@ -3,7 +3,6 @@ import supabase from '../../config/supabase.js';
 const Home = {
   async render() {
     try {
-      // Mengambil data lowongan kerja dari database Supabase dengan melakukan dua query terpisah
       const { data: jobs, errorJobs } = await supabase
         .from('lowongan')
         .select('posisi, gaji, deskripsi_perusahaan, id_perusahaan, id');
@@ -17,7 +16,6 @@ const Home = {
         return `<div>Error fetching data. Please try again later.</div>`;
       }
 
-      // Menggabungkan data dari kedua tabel berdasarkan id_perusahaan
       const mergedData = jobs.map(job => {
         const company = companies.find(company => company.id === job.id_perusahaan);
         return {
@@ -26,16 +24,13 @@ const Home = {
           deskripsi_perusahaan: job.deskripsi_perusahaan,
           nama_perusahaan: company.nama_perusahaan,
           alamat: company.alamat,
-          id: job.id // tambahkan ID lowongan
+          id: job.id 
         };
       });
 
-      // Maksimum panjang deskripsi yang ingin ditampilkan dalam kartu pekerjaan
       const maxDescriptionLength = 200;
 
-      // Memproses data untuk menampilkan card job dengan deskripsi yang sudah dipotong
       const jobCards = mergedData.map(job => {
-        // Memotong deskripsi perusahaan jika melebihi panjang maksimum
         const truncatedDescription = job.deskripsi_perusahaan.length > maxDescriptionLength ?
           job.deskripsi_perusahaan.substring(0, maxDescriptionLength) + '...' :
           job.deskripsi_perusahaan;
@@ -82,7 +77,6 @@ const Home = {
     const searchInput = document.querySelector('.search-bar input');
     const jobCardsContainer = document.querySelector('.job-cards');
 
-    // Mengambil data perusahaan untuk digunakan dalam event listener
     const { data: companies, errorCompanies } = await supabase
       .from('perusahaan')
       .select('nama_perusahaan, alamat, id');
@@ -90,7 +84,6 @@ const Home = {
     searchButton.addEventListener('click', async () => {
       const keyword = searchInput.value.trim().toLowerCase();
       if (keyword) {
-        // Lakukan pencarian berdasarkan posisi
 
         const { data: jobs, error } = await supabase
           .from('lowongan')
@@ -103,11 +96,9 @@ const Home = {
         }
 
         if (jobs && jobs.length > 0) {
-          // Tampilkan hasil pencarian dalam job cards
           const jobCards = jobs.map(job => {
             const company = companies.find(c => c.id === job.id_perusahaan);
             if (company) {
-              // Memotong deskripsi perusahaan jika melebihi panjang maksimum
               const maxDescriptionLength = 200;
               const truncatedDescription = job.deskripsi_perusahaan.length > maxDescriptionLength ?
                 job.deskripsi_perusahaan.substring(0, maxDescriptionLength) + '...' :
@@ -129,7 +120,6 @@ const Home = {
 
           jobCardsContainer.innerHTML = jobCards;
         } else {
-          // Tampilkan pesan jika tidak ada hasil pencarian
           jobCardsContainer.innerHTML = `<h3 class="no-results-search">Tidak ada iklan lowongan dengan posisi "${keyword}"</h3>`;
         }
       } else {
@@ -137,12 +127,10 @@ const Home = {
       }
     });
 
-    // Tambahkan event listener untuk tombol enter pada input search
     searchInput.addEventListener('keypress', async (event) => {
       if (event.key === 'Enter') {
         const keyword = searchInput.value.trim().toLowerCase();
         if (keyword) {
-          // Lakukan pencarian berdasarkan posisi
           const { data: jobs, error } = await supabase
             .from('lowongan')
             .select('posisi, gaji, deskripsi_perusahaan, id_perusahaan, id')
@@ -154,11 +142,9 @@ const Home = {
           }
 
           if (jobs && jobs.length > 0) {
-            // Tampilkan hasil pencarian dalam job cards
             const jobCards = jobs.map(job => {
               const company = companies.find(c => c.id === job.id_perusahaan);
               if (company) {
-                // Memotong deskripsi perusahaan jika melebihi panjang maksimum
                 const maxDescriptionLength = 200;
                 const truncatedDescription = job.deskripsi_perusahaan.length > maxDescriptionLength ?
                   job.deskripsi_perusahaan.substring(0, maxDescriptionLength) + '...' :
@@ -180,7 +166,6 @@ const Home = {
 
             jobCardsContainer.innerHTML = jobCards;
           } else {
-            // Tampilkan pesan jika tidak ada hasil pencarian
             jobCardsContainer.innerHTML = `<h3 class="no-results-search">Tidak ada iklan lowongan dengan posisi "${keyword}"</h3>`;
           }
         } else {

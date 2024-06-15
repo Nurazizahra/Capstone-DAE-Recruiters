@@ -83,7 +83,6 @@ const Buat = {
       const kualifikasi = formData.get('kualifikasi');
       const jam = formData.get('jam');
 
-      // Mendapatkan ID perusahaan yang sedang login dari session storage
       const loggedInCompanyId = sessionStorage.getItem('companyId');
       
       if (!loggedInCompanyId) {
@@ -91,7 +90,6 @@ const Buat = {
         return;
       }
 
-      // Memasukkan data lowongan ke dalam tabel 'lowongan'
       const { data, error } = await supabase
         .from('lowongan')
         .insert([
@@ -121,7 +119,6 @@ const Buat = {
       }
     });
 
-    // Menambahkan kelas aktif ke elemen menu yang sesuai
     const currentPath = window.location.hash.split('/')[1];
     const menuItems = document.querySelectorAll('.menu-item');
 

@@ -130,6 +130,8 @@ nav ul li a {
 /* Main Content */
 main {
   flex: 1;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* Home Content */
@@ -305,18 +307,15 @@ main {
 
 .icon-sosmed i {
   font-size: 24px;
-  /* Adjust the size as needed */
   transition: color 0.3s;
 }
 
 .icon-sosmed a:hover i {
   color: #0077b5;
-  /* Example color change on hover for LinkedIn */
 }
 
 .icon-sosmed a:hover i.fa-instagram {
   color: #e4405f;
-  /* Example color change on hover for Instagram */
 }
 
 .data-loker h5 {
@@ -341,18 +340,15 @@ main {
 
 .icon-sosmed i {
   font-size: 24px;
-  /* Adjust the size as needed */
   transition: color 0.3s;
 }
 
 .icon-sosmed a:hover i {
   color: #0077b5;
-  /* Example color change on hover for LinkedIn */
 }
 
 .icon-sosmed a:hover i.fa-instagram {
   color: #e4405f;
-  /* Example color change on hover for Instagram */
 }
 
 /* Pasang Loker Content */
@@ -517,7 +513,6 @@ main {
 
 .icon-sosmed a:hover i.fa-github {
   color: #0a0896;
-  /* Example color change on hover for Instagram */
 }
 
 .image-about {

@@ -5,14 +5,12 @@ import '../../component/sidebar.js';
 const Dashboard = {
   async render() {
     try {
-      // Mendapatkan ID perusahaan yang sedang login dari session storage
       const loggedInCompanyId = sessionStorage.getItem('companyId');
       
       if (!loggedInCompanyId) {
         throw new Error('No company ID found in session storage.');
       }
 
-      // Mengambil data lowongan kerja yang hanya terkait dengan perusahaan yang sedang login
       const { data: jobs, error: errorJobs } = await supabase
         .from('lowongan')
         .select('id, posisi, gaji, deskripsi_perusahaan, id_perusahaan')
@@ -22,7 +20,6 @@ const Dashboard = {
         throw new Error(`Error fetching job data: ${errorJobs.message}`);
       }
 
-      // Mengambil data perusahaan untuk menampilkan informasi perusahaan di dalam job cards
       const { data: companyData, error: errorCompany } = await supabase
         .from('perusahaan')
         .select('nama_perusahaan, alamat')
@@ -33,7 +30,6 @@ const Dashboard = {
         throw new Error(`Error fetching company data: ${errorCompany.message}`);
       }
 
-      // Memproses data untuk menampilkan card job dengan deskripsi yang sudah dipotong
       const maxDescriptionLength = 140;
       let jobCards = '';
 
@@ -43,7 +39,6 @@ const Dashboard = {
             job.deskripsi_perusahaan.substring(0, maxDescriptionLength) + '...' :
             job.deskripsi_perusahaan;
 
-          // Menggunakan URL Parser untuk membuat URL dengan ID lowongan
           const detailUrl = `#/detail/${job.id}`;
 
           return `
@@ -80,28 +75,25 @@ const Dashboard = {
   },
 
   async afterRender() {
-    // Mengubah teks dan href tombol login menjadi logout saat halaman dashboard diakses
     const loginButton = document.querySelector('.login-button a');
     
     if (sessionStorage.getItem('isLoggedIn') === 'true') {
       loginButton.textContent = 'Logout';
       loginButton.href = '#/login';
 
-      // Tambahkan event listener untuk tombol logout
       loginButton.addEventListener('click', (event) => {
         event.preventDefault();
-        // Hapus status login
+
         sessionStorage.removeItem('isLoggedIn');
         sessionStorage.removeItem('companyId');
-        // Arahkan ke halaman home setelah logout
+       
         window.location.hash = '#/login';
-        // Ubah kembali tombol menjadi login
+       
         loginButton.textContent = 'Login';
         loginButton.href = '#/login';
       });
     }
 
-    // Menambahkan kelas aktif ke elemen menu yang sesuai
     const currentPath = window.location.hash.split('/')[1];
     const menuItems = document.querySelectorAll('.menu-item');
 

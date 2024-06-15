@@ -68,11 +68,10 @@ const Edit = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const jobId = url.id;
 
-    console.log('Parsed URL:', url); // Log URL parsed
-    console.log('Job ID:', jobId); // Log job ID parsed
+    console.log('Parsed URL:', url);
+    console.log('Job ID:', jobId); 
 
     try {
-      // Mengambil data lowongan berdasarkan ID
       const { data: job, error } = await supabase
         .from('lowongan')
         .select('*')
@@ -83,7 +82,6 @@ const Edit = {
         throw new Error(`Failed to fetch job data: ${error.message}`);
       }
 
-      // Mengisi form dengan data yang diambil
       document.querySelector('#posisi').value = job.posisi;
       document.querySelector('#linkedin').value = job.tautan_linkedin || '';
       document.querySelector('#instagram').value = job.tautan_instagram || '';
@@ -97,11 +95,9 @@ const Edit = {
       document.querySelector('#kualifikasi').value = job.kualifikasi;
       document.querySelector('#jam').value = job.jam_kerja;
 
-      // Event listener untuk submit form
       document.querySelector('.editloker-form').addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        // Mengambil nilai dari form
         const updatedJob = {
           posisi: document.querySelector('#posisi').value,
           tautan_linkedin: document.querySelector('#linkedin').value,
@@ -117,7 +113,6 @@ const Edit = {
           jam_kerja: document.querySelector('#jam').value,
         };
 
-        // Update data lowongan di database
         const { data, error: updateError } = await supabase
           .from('lowongan')
           .update(updatedJob)
@@ -127,12 +122,10 @@ const Edit = {
           throw new Error(`Failed to update job data: ${updateError.message}`);
         }
 
-        // Menampilkan notifikasi dan kembali ke halaman manajemen
         alert('Lowongan berhasil diperbarui');
-        window.location.href = '#/manajemenloker';
+        window.location.href = '#/dashboard';
       });
 
-      // Menambahkan kelas aktif ke elemen menu Manajemen
       document.querySelector('a[data-route="manajemenloker"]').classList.add('active');
 
     } catch (error) {

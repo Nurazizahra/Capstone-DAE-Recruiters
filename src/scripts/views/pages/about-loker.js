@@ -92,7 +92,7 @@ const About = {
   },
 
   async afterRender() {
-    // Jangan dihapus, biarin aja kosong agar tidak error
+    
   },
 };
 

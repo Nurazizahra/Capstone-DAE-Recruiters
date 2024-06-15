@@ -58,14 +58,12 @@ const Akun = {
 
   async afterRender() {
     try {
-      // Mendapatkan ID perusahaan yang sedang login dari sessionStorage
       const loggedInCompanyId = sessionStorage.getItem('companyId');
 
       if (!loggedInCompanyId) {
         throw new Error('No company ID found in session storage.');
       }
 
-      // Mengambil data perusahaan berdasarkan ID
       const { data: companyData, error } = await supabase
         .from('perusahaan')
         .select('nama_perusahaan, alamat, nama_penanggung_jawab, email, nik, password')
@@ -76,14 +74,12 @@ const Akun = {
         throw new Error(`Error fetching company data: ${error.message}`);
       }
 
-      // Mengisi form dengan data perusahaan
       document.querySelector('#namaPerusahaan').value = companyData.nama_perusahaan;
       document.querySelector('#alamatPerusahaan').value = companyData.alamat;
       document.querySelector('#namaPenanggungJawab').value = companyData.nama_penanggung_jawab;
       document.querySelector('#email').value = companyData.email;
       document.querySelector('#nik').value = companyData.nik;
 
-      // Menangani toggle password visibility
       document.querySelectorAll('.toggle-password').forEach(toggle => {
         toggle.addEventListener('click', () => {
           const input = toggle.previousElementSibling;
@@ -93,16 +89,13 @@ const Akun = {
         });
       });
 
-      // Menangani submit form untuk update data perusahaan
       document.querySelector('.kelolaakun-form').addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        // Mengambil nilai dari form
         const currentPassword = document.querySelector('#currentPassword').value;
         const newPassword = document.querySelector('#newPassword').value;
         const confirmNewPassword = document.querySelector('#confirmNewPassword').value;
 
-        // Verifikasi password lama dengan bcrypt
         const isPasswordValid = await bcrypt.compare(currentPassword, companyData.password);
 
         if (!isPasswordValid) {
@@ -110,32 +103,27 @@ const Akun = {
           return;
         }
 
-        // Verifikasi panjang password baru
         if (newPassword.length < 8) {
           alert('Buat password dengan panjang minimal 8 karakter.');
           return;
         }
 
-        // Verifikasi konfirmasi password baru
         if (newPassword !== confirmNewPassword) {
           alert('Konfirmasi password baru tidak sesuai.');
           return;
         }
 
-        // Hash password baru
         const hashedNewPassword = await bcrypt.hash(newPassword, 10);
 
-        // Mengambil nilai dari form
         const updatedCompanyData = {
           nama_perusahaan: document.querySelector('#namaPerusahaan').value,
           alamat: document.querySelector('#alamatPerusahaan').value,
           nama_penanggung_jawab: document.querySelector('#namaPenanggungJawab').value,
           email: document.querySelector('#email').value,
           nik: document.querySelector('#nik').value,
-          password: hashedNewPassword, // Update password
+          password: hashedNewPassword,
         };
 
-        // Mengupdate data perusahaan di Supabase
         const { data, error: updateError } = await supabase
           .from('perusahaan')
           .update(updatedCompanyData)
@@ -145,12 +133,19 @@ const Akun = {
           throw new Error(`Failed to update company data: ${updateError.message}`);
         }
 
-        // Menampilkan notifikasi dan menyegarkan halaman
         alert('Akun berhasil diperbarui');
-        window.location.reload();
+        
+        sessionStorage.removeItem('isLoggedIn');
+        sessionStorage.removeItem('companyId');
+
+        const loginButton = document.querySelector('.login-button a');
+
+        loginButton.textContent = 'Login';
+        loginButton.href = '#/login';
+        
+        window.location.hash = '#/login';
       });
 
-      // Menambahkan kelas aktif ke elemen menu Kelola Akun
       document.querySelector('a[data-route="kelolaakun"]').classList.add('active');
 
     } catch (error) {

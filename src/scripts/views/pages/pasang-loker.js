@@ -17,7 +17,7 @@ const Pasang = {
   },
 
   async afterRender() {
-    // Jangan dihapus, biarin aja kosong agar tidak error
+  
   },
 };
 
