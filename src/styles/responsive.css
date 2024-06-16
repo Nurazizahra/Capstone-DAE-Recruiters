@@ -41,7 +41,6 @@
   .submit-buatloker-button,
   .submit-editloker-button {
     font-size: 0.9rem;
-    padding: 0.65rem;
   }
 
   .button-cards {
@@ -139,14 +138,8 @@
     font-size: 2rem;
   }
 
-  .login-form input,
-  .regis-form input {
-    padding: 0.5rem;
-  }
-
   .submit-button,
   .submit-regis-button {
-    padding: 0.5rem;
     font-size: 0.875rem;
   }
 
@@ -177,7 +170,6 @@
   .submit-editloker-button,
   .submit-kelolaakun-button {
     font-size: 0.85rem;
-    padding: 0.6rem;
   }
 
   .button-cards {
@@ -312,13 +304,11 @@
 
   .login-form input,
   .regis-form input {
-    padding: 0.5rem;
     font-size: 1rem;
   }
 
   .submit-button,
   .submit-regis-button {
-    padding: 0.5rem;
     font-size: 1rem;
   }
 
@@ -373,7 +363,6 @@
   .submit-kelolaakun-button,
   .submit-editloker-button {
     font-size: 0.8rem;
-    padding: 0.55rem;
   }
 
   .button-cards {
@@ -382,6 +371,11 @@
 }
 
 @media (max-width: 490px) {
+  .app-bar .app-bar__brand img {
+    width: 60px;
+    height: 60px;
+  }
+  
   .pusat-bantuan-title {
     font-size: 28px;
   }
@@ -474,7 +468,7 @@
   }
 
   .button-cards {
-    padding: 12px 24px;
+    padding: 10px 22px;
   }
 
   .sidebar {
@@ -509,7 +503,6 @@
   .editloker-form textarea,
   .editloker-form input,
   .kelolaakun-form input {
-    padding: 0.5rem;
     font-size: 0.8rem;
   }
 
@@ -534,7 +527,7 @@
     background-color: #eaeaea;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 18px;
+    padding: 16px;
   }
 
   .job-card .highlight a {
