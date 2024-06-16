@@ -352,22 +352,18 @@ main {
 }
 
 /* Pasang Loker Content */
-.pasang-loker-frame {
+.pasang-loker-content {
   text-align: center;
   max-width: 1200px;
   width: 90%;
-  margin: 0 auto;
-}
-
-.pasang-loker-content {
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .pasang-loker-title {
   font-size: 50px;
   color: #333;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .pasang-loker-description {
@@ -379,14 +375,13 @@ main {
 
 .pasang-loker-button {
   display: flex;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
 }
 
 .pasang-loker-content a {
-  padding: 16px;
+  padding: 13px;
   font-size: 20px;
   background-color: black;
   color: white;

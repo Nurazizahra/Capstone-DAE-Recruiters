@@ -1,7 +1,6 @@
 const Pasang = {
   async render() {
     return `
-        <div class="pasang-loker-frame">
             <div class="pasang-loker-content">
                 <h2 class="pasang-loker-title">Cari Kandidat Terbaik untuk Perusahaan Anda</h2>
                 <p class="pasang-loker-description">
@@ -12,7 +11,6 @@ const Pasang = {
                     <a href="#/registrasi">Registrasi Perusahaan</a>
                 </div>
             </div>
-        </div>
       `;
   },
 
