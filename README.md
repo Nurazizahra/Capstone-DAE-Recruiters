@@ -30,7 +30,7 @@ Untuk menjalankan DAE Recruiters secara lokal, ikuti langkah-langkah berikut:
 
 4. **Jalankan Aplikasi**
     ```sh
-    npm start-dev
+    npm run start-dev
     ```
 
     Aplikasi sekarang seharusnya berjalan di `http://localhost:8080`.
