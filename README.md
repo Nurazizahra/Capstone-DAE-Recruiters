@@ -41,7 +41,7 @@ Anda dapat mengakses versi live dari proyek kami di sini: [DAE Recruiters](https
 
 ## Tim
 
-Tim ID : C624-PS124
+Tim ID : C624-PS124 <br>
 Berikut adalah anggota tim yang berkontribusi pada pengembangan proyek DAE Recruiters:
 
 | Nama                     | ID         | Peran               |GitHub                                              |
